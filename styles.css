@@ -103,3 +103,27 @@ model-viewer[ar-status="session-started"] > #ar-prompt {
 model-viewer > #ar-prompt > img {
   animation: circle 4s linear infinite;
 }
+
+.Row{
+    font-size: 26px;
+    margin: 30px 30px;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: space-between;
+}
+.Column{
+    flex-basis: 31%;
+    background-color: rgb(70, 70, 70);
+    border-radius: 10px;
+    padding: 20px 12px;
+    margin: 30px 30px;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+.Column p{
+    text-align: left;
+    padding-left: 5%;
+}
+.Column:hover{
+    box-shadow: 0 0 20px 0px rgba(7, 175, 176, 0.6);
+}
