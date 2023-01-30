@@ -7,12 +7,13 @@ body {
   padding: 0;
   width: 100vw;
   height: 100vh;
+  background-color: rgb(20, 20, 20);
 }
 
 model-viewer {
   width: 100vw;
   height: 80vh;
-  background-color: #ffffff;
+  background-color: rgb(20, 20, 20);
 
 }
 
