@@ -6,46 +6,47 @@
     <meta name="description" content="&lt;model-viewer&gt; template" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link type="text/css" href="./styles.css" rel="stylesheet" />
-    <!-- OPTIONAL: The :focus-visible polyfill removes the focus ring for some input types -->
     <script
       src="https://unpkg.com/focus-visible@5.0.2/dist/focus-visible.js"
       defer
     ></script>
     <script>
-      function getPlate(plateName){
-        letplate = new URLSearchParams( window.location.search);
-        return parameters.get(plateName);
-      }
+      function loadSrc(){
+        let plate = new URLSearchParams( window.location.search);
+        const name = "chicken_plate"
+        document.getElementById("1").src=`TikTakDishes/${name}.glb`;
+        document.getElementById("1").poster="TikTakDishes/chicken_plate_poster.webp";
+      }    
     </script>
+    
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
   </head>
-  <body>  
-    <div class="container">
-      
-      <model-viewer
-            src="https://cdn.glitch.global/72b07e36-af74-47a6-85b1-a7f89127791a/Plate.glb?v=1676050655361"
-            ar
-            camera-controls
-            poster="poster.webp"
-            shadow-intensity="1"
-            ios-src="https://cdn.glitch.global/72b07e36-af74-47a6-85b1-a7f89127791a/Plate.usdz?v=1676050943109"
-          >
-        <img class="logoTiktak" src="https://cdn.glitch.global/72b07e36-af74-47a6-85b1-a7f89127791a/LogoTikTak.png?v=1675106898820">
-            <div class="progress-bar hide" slot="progress-bar">
-              <div class="update-bar"></div>
-            </div>
-            <button slot="ar-button" id="ar-button">View in your space</button>
-            <div id="ar-prompt">
-              <img src="ar_hand_prompt.png" />
-            </div>
-          </model-viewer>
-      <!--Project Section-->
-    </div>
-    <script src="script.js"></script>
-          <!-- Loads <model-viewer> for browsers: -->
-          <script
-            type="module"
-            src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
-          ></script>
+  <body onload="loadSrc()">  
     <!-- <model-viewer> HTML element -->
+      <div class="container" >
+        <model-viewer
+              id = "1"
+              src=""
+              poster=""
+              ar
+              camera-controls
+              auto-rotate
+              shadow-intensity="1" 
+              ios-src="https://cdn.glitch.global/72b07e36-af74-47a6-85b1-a7f89127791a/chicken_plate.usdz?v=1675085642584"
+            >
+          <img class="logoTiktak" src="https://cdn.glitch.global/72b07e36-af74-47a6-85b1-a7f89127791a/LogoTikTak.png?v=1675106898820">
+              <div class="progress-bar hide" slot="progress-bar">
+                <div class="update-bar"></div>
+              </div>
+              <button slot="ar-button" id="ar-button">View in your space</button>
+              <div id="ar-prompt">
+                <img src="ar_hand_prompt.png" />
+              </div>
+            </model-viewer>
+        <!--Project Section-->
+      </div>
+      <script src="script.js"></script>
+      
   </body>
 </html>
