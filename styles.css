@@ -3,6 +3,7 @@
 }
 
 body {
+  display: flex;
   margin: 0;
   padding: 0;
   width: 100vw;
@@ -17,8 +18,8 @@ html{
 
 model-viewer {
   width: 100vw;
-  height: fit-content;
-  
+  height: 100vh;
+  height: -webkit-fill-available;
   background-color: rgb(240, 240, 240);
 }
 
