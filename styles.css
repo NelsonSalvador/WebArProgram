@@ -185,4 +185,5 @@ model-viewer > #ar-prompt > img {
     color: rgb(88, 88, 88);
     text-align: center;
     top: 80vh;
+    position: absolute;
   }
