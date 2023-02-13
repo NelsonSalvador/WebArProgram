@@ -191,7 +191,7 @@ model-viewer > #ar-prompt > img {
   }
 
   .close{
-    width: 30px;
+    width: 50px;
     position: absolute;
     left: 2px;
     top: 2px;
