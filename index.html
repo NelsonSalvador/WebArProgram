@@ -13,9 +13,21 @@
     <script>
       function loadSrc(){
         let plate = new URLSearchParams( window.location.search);
-        const name = "chicken_plate"
+        var name = plate.get("name");
         document.getElementById("1").src=`TikTakDishes/${name}.glb`;
         document.getElementById("1").poster="TikTakDishes/chicken_plate_poster.webp";
+        if (false){
+          document.getElementById("1").src=`TikTakDishes/${name}.glb`;
+          document.getElementById("1").poster="TikTakDishes/chicken_plate_poster.webp";
+        }
+        else if (false){
+          document.getElementById("1").src=`TikTakDishes/${name}.glb`;
+          document.getElementById("1").poster="TikTakDishes/chicken_plate_poster.webp";
+        }
+        else if (false){
+          document.getElementById("1").src=`TikTakDishes/${name}.glb`;
+          document.getElementById("1").poster="TikTakDishes/chicken_plate_poster.webp";
+        }
       }    
     </script>
     
