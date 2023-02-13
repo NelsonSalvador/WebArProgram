@@ -12,7 +12,7 @@ body {
 
 model-viewer {
   width: 100vw;
-  height: 80vh;
+  height: 100vh;
   background-color: rgb(240, 240, 240);
 
 }
@@ -171,4 +171,11 @@ model-viewer > #ar-prompt > img {
 
   .slide:focus-visible {
     outline: 1px solid #4285f4;
+  }
+
+  .DishNameText{
+    font-size: 32px;
+    font-weight: 400;
+    color: rgb(88, 88, 88);
+    text-align: center;
   }

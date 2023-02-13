@@ -14,20 +14,8 @@
       function loadSrc(){
         let plate = new URLSearchParams( window.location.search);
         var name = plate.get("name");
-        document.getElementById("1").src=`TikTakDishes/${name}.glb`;
-        document.getElementById("1").poster="TikTakDishes/chicken_plate_poster.webp";
-        if (false){
-          document.getElementById("1").src=`TikTakDishes/${name}.glb`;
-          document.getElementById("1").poster="TikTakDishes/chicken_plate_poster.webp";
-        }
-        else if (false){
-          document.getElementById("1").src=`TikTakDishes/${name}.glb`;
-          document.getElementById("1").poster="TikTakDishes/chicken_plate_poster.webp";
-        }
-        else if (false){
-          document.getElementById("1").src=`TikTakDishes/${name}.glb`;
-          document.getElementById("1").poster="TikTakDishes/chicken_plate_poster.webp";
-        }
+        document.getElementById("1").src=`TikTakDishes/chicken_plate.glb`;
+        document.getElementById("1").poster=`TikTakDishes/${name}_poster.webp`;
       }    
     </script>
     
@@ -37,6 +25,7 @@
   <body onload="loadSrc()">  
     <!-- <model-viewer> HTML element -->
       <div class="container" >
+        
         <model-viewer
               id = "1"
               src=""
@@ -55,6 +44,7 @@
               <div id="ar-prompt">
                 <img src="ar_hand_prompt.png" />
               </div>
+              <h1 class="DishNameText">Pernas de frango</h1>
             </model-viewer>
         <!--Project Section-->
       </div>
