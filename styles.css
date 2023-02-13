@@ -180,8 +180,9 @@ model-viewer > #ar-prompt > img {
   }
 
   .DishNameText{
-    font-size: 32px;
+    font-size: 12px;
     font-weight: 400;
     color: rgb(88, 88, 88);
     text-align: center;
+    top: 80vh;
   }

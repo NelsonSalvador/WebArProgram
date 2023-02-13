@@ -14,7 +14,7 @@
       function loadSrc(){
         let plate = new URLSearchParams( window.location.search);
         var name = plate.get("name");
-        document.getElementById("1").src=`TikTakDishes/${name}.glb`;
+        document.getElementById("1").src=`TikTakDishes/chicken_plate.glb`;
         document.getElementById("1").poster=`TikTakDishes/${name}_poster.webp`;
       }    
     </script>
@@ -25,7 +25,6 @@
   <body onload="loadSrc()">
     <!-- <model-viewer> HTML element -->
       <div class="container" >
-        
         <model-viewer
               id = "1"
               src=""
@@ -33,7 +32,7 @@
               ar
               camera-controls
               auto-rotate
-              shadow-intensity="1" 
+              shadow-intensity="1"
               ios-src="https://cdn.glitch.global/72b07e36-af74-47a6-85b1-a7f89127791a/chicken_plate.usdz?v=1675085642584"
             >
           <img class="logoTiktak" src="https://cdn.glitch.global/72b07e36-af74-47a6-85b1-a7f89127791a/LogoTikTak.png?v=1675106898820">
@@ -44,7 +43,7 @@
               <div id="ar-prompt">
                 <img src="ar_hand_prompt.png" />
               </div>
-              <h1 class="DishNameText">Pernas de frango</h1>
+              <h1 class="DishNameText">Powerd by Dhata Technology</h1>
             </model-viewer>
         <!--Project Section-->
       </div>
