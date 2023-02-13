@@ -18,11 +18,17 @@
         document.getElementById("1").poster=`TikTakDishes/${name}_poster.webp`;
       }    
     </script>
+    <script>
+      function changeSrc(){
+        document.getElementById("1").src=`TikTakDishes/pizza_plate.glb`;
+        document.getElementById("1").poster=`TikTakDishes/${name}_poster.webp`;
+      }    
+    </script>
     
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 
   </head>
-  <body onload="loadSrc()">
+  <body onload="loadSrc()" onclick="changeSrc()">
     <!-- <model-viewer> HTML element -->
       <div class="container" >
         
