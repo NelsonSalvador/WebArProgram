@@ -7,14 +7,17 @@ body {
   padding: 0;
   width: 100vw;
   height: 100vh;
-  min-height: -webkit-fill-available;
   background-color: rgb(240, 240, 240);
+  height: -webkit-fill-available;
+}
 
+html{
+  height: -webkit-fill-available;
 }
 
 model-viewer {
   width: 100vw;
-  height: -webkit-fill-available;
+  height: 100vh;
   background-color: rgb(240, 240, 240);
 }
 
