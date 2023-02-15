@@ -195,7 +195,7 @@ model-viewer > #ar-prompt > img {
     width: 40px;
     position: absolute;
     left: 2px;
-    top: 2px;
+    top: 5px;
   }
   .BlueText{
     color: rgb(0, 69, 173);
