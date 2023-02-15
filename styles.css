@@ -184,15 +184,19 @@ model-viewer > #ar-prompt > img {
     font-weight: 400;
     color: rgb(88, 88, 88);
     text-align: center;
-    top: 80vh;
-    right: 5px;
+    bottom: 10px;
     position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 
   }
 
   .close{
-    width: 50px;
+    width: 40px;
     position: absolute;
     left: 2px;
     top: 2px;
+  }
+  .BlueText{
+    color: rgb(0, 69, 173);
   }
